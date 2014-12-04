@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8" />
+        <title>Hefei AQI</title>
+
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script type="text/javascript" src="../js/heatcanvas.js"></script>
+        <script type="text/javascript" src="../js/heatcanvas-leaflet.js"></script>
+        <script type="text/javascript" src="../js/map.js"></script>
+        <!--data.js is a json data for testing, comment before publish-->
+        <!--<script src="../json/data.js"></script>-->
+        <!--This is the realtime aqi data.-->
+        <script src="http://www.pm25.in/api/querys/only_aqi.json?city=hefei&token=5j1znBVAsnSf5xQyNQyq&callback=getjson"></script>
+    </head>
+
+    <body onload="init();">
+        <div>
+            <h1>Hefei Air Quality Index Map</h1>
+        </div>
+        <div id="map" style="width:850px; height:500px;"></div>
+        <!--<div id="map" style="width:200px; height:200px;"></div>-->
+        <div><p id="status"></p></div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8" />
+        <title>交通热图</title>
+
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script type="text/javascript" src="../js/heatcanvas.js"></script>
+        <script type="text/javascript" src="../js/heatcanvas-leaflet.js"></script>
+        <script type="text/javascript" src="../js/grids.js"></script>
+        <!--data.js is a json data for testing, comment before publish-->
+        <script src="../json/conf.js"></script>
+        <script src="../json/centers.js"></script>
+    </head>
+
+    <body onload="init();">
+        <div>
+            <h1>交通热图</h1>
+        </div>
+        <div id="map" style="width:850px; height:500px;"></div>
+        <div><p id="status"></p></div>
+    </body>
+</html>
